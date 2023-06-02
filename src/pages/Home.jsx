@@ -1,4 +1,4 @@
-import Navbar from "../component/Navbar";
+
 import {
   Button,
   Card,
@@ -11,35 +11,17 @@ import {
 } from "@mui/material";
 import img from "../asset/Home/trust01.png";
 import HomeCard from "../component/home/HomeCard";
+import logo from '../asset/Home/logo.png'
 import Footer from "../component/Footer";
+import NavBar from "../component/home/Navbar";
 export default function Home() {
   return (
     <>
       {/* <Navbar /> */}
-      <div className="hero">
+      <div className="hero h-[600px]">
         <div className="mask">
-        <ul className="home_nav_top">
-            <li>
-              {" "}
-              <Typography variant="p" component={"p"}>
-                Home
-              </Typography>{" "}
-            </li>
-            <li>
-              {" "}
-              <Typography variant="p" component={"p"}>
-                Assignment
-              </Typography>{" "}
-            </li>
-            <li>
-              {" "}
-              <Typography variant="p" component={"p"}>
-                Solutions
-              </Typography>{" "}
-            </li>
-           
-          </ul>
-          <div className="hero_text">
+         <NavBar/>
+          <div className="hero_text px-2 py-4">
          
             <Typography variant="h3" component="h6">
               Hire best tutors and researchers
@@ -65,21 +47,17 @@ export default function Home() {
         </div>
       </div>
       <div
-        className="center"
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          transform: "translateY(-70%)",
-        }}
+        className="center flex justify-center translate-y-[-60%] flex-wrap"
+       
       >
         <Card
           variant="outlined"
           className="form_card"
           sx={{
-            width: "300px",
+            minWidth: "300px",
             backgroundColor: "white",
             display: "flex",
-            padding: 2,
+            padding: "5px",
             justifyContent: "center",
           }}
         >
@@ -90,6 +68,7 @@ export default function Home() {
               justifyContent: "center",
               flexDirection: "column",
             }}
+            className="py-5"
           >
             <Typography
               variant="h6"
@@ -98,13 +77,23 @@ export default function Home() {
             >
               Quick Upload
             </Typography>
-            <TextField id="filled-basic" label="Filled" variant="filled" />
-            <br />
-            <br />
-            <TextField id="filled-basic" label="Filled" variant="filled" />
-            <br />
-            <br />
-            <TextField id="filled-basic" label="Filled" variant="filled" />
+            <input
+              type="text"
+              placeholder="Enter Your Name"
+              className="bg-transparent my-2 py-2 outline-none  border-b-2 border-[#b7b7b7]  "
+            />
+
+            <input
+              type="text"
+              placeholder="Enter Your Email"
+              className="bg-transparent my-2 py-2 outline-none  border-b-2 border-[#b7b7b7]  "
+            />
+
+            <input
+              type="text"
+              placeholder="Enter Your Subject"
+              className="bg-transparent my-2 py-2 outline-none  border-b-2 border-[#b7b7b7]  "
+            />
             <Button
               sx={{
                 bgcolor: "blue",
@@ -153,9 +142,10 @@ export default function Home() {
             justifyContent: "space-around",
             py: 4,
           }}
+          className="flex-wrap"
         >
           <HomeCard
-            sx={{ width: "30%", textAlign: "center", marginTop: "12px" }}
+            sx={{ width: "30%",minWidth:'300px', textAlign: "center" }}
             title={"title"}
             img={img}
             content={
@@ -169,7 +159,7 @@ export default function Home() {
             }
           />
           <HomeCard
-            sx={{ width: "30%", textAlign: "center", marginTop: "12px" }}
+            sx={{ width: "30%",minWidth:'300px', textAlign: "center" }}
             title={"title"}
             img={img}
             content={
@@ -183,7 +173,7 @@ export default function Home() {
             }
           />
           <HomeCard
-            sx={{ width: "30%", textAlign: "center", marginTop: "12px" }}
+            sx={{ width: "30%",minWidth:'300px', textAlign: "center" }}
             title={"title"}
             img={img}
             content={
@@ -206,8 +196,8 @@ export default function Home() {
             marginTop: "40px",
           }}
         >
-          <HomeCard
-            sx={{ width: "30%", textAlign: "center", marginTop: "12px" }}
+         <HomeCard
+            sx={{ width: "30%",minWidth:'300px', textAlign: "center" }}
             title={"title"}
             img={img}
             content={
@@ -220,8 +210,8 @@ export default function Home() {
               </>
             }
           />
-          <HomeCard
-            sx={{ width: "30%", textAlign: "center", marginTop: "12px" }}
+         <HomeCard
+            sx={{ width: "30%",minWidth:'300px', textAlign: "center" }}
             title={"title"}
             img={img}
             content={
@@ -234,8 +224,8 @@ export default function Home() {
               </>
             }
           />
-          <HomeCard
-            sx={{ width: "30%", textAlign: "center", marginTop: "12px" }}
+         <HomeCard
+            sx={{ width: "30%",minWidth:'300px', textAlign: "center" }}
             title={"title"}
             img={img}
             content={
@@ -300,7 +290,7 @@ export default function Home() {
             marginTop: "40px",
           }}
         >
-          <Card sx={{ width: "30%", textAlign: "center", marginTop: "12px" }}>
+          <Card className="md:w-[30%] w-[80%] text-center md:mr-[5%]">
             <div
               className="mask2"
               style={{
@@ -322,18 +312,18 @@ export default function Home() {
             </div>
           </Card>
           <div className="request">
-            <Card sx={{ textAlign: "center", marginTop: "12px", p: 6 }}>
-              <Typography variant="h4" component={"h4"} sx={{ mb: 4 }}>
+            <Card sx={{ textAlign: "center", p: 6 }} >
+              <h4 className="text-[#00a6ae] text-[30px] font-[600] mb-4">
                 Request For Call Back
-              </Typography>
-              <TextField id="filled-basic" label="Filled" variant="filled" />
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <TextField id="filled-basic" label="Filled" variant="filled" />
+              </h4>
+              <TextField id="filled-basic" label="Enter Your Email" variant="filled" />&nbsp;
+             <div className="md:hidden mt-[5%]"></div>
+              <TextField type={"number"} id="filled-basic" className="ml-[20px]" label="Contact Number"  variant="filled" />
               <br />
               <br />
               <TextField
                 id="filled-multiline-flexible"
-                label="Multiline"
+                label="Message"
                 multiline
                 maxRows={8}
                 minRows={8}
@@ -341,7 +331,7 @@ export default function Home() {
               />
                <Button
               sx={{
-                bgcolor: "blue",
+                bgcolor: "#00a6ae",
                 marginTop: "20px",
                 borderRadius: "20px",
                 borderColor: "white",
@@ -356,7 +346,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Footer/>
+
     </>
   );
 }
