@@ -47,7 +47,7 @@ export default function Home() {
         </div>
       </div>
       <div
-        className="center flex justify-center translate-y-[-60%] flex-wrap"
+        className="center flex justify-center md:translate-y-[-60%] flex-wrap"
        
       >
         <Card
@@ -124,14 +124,14 @@ export default function Home() {
           component="h6"
           sx={{ textAlign: "center", color: "#00a6ae" }}
         >
-          Welcome to Locus Assignments
+          Welcome to Academi Assist
         </Typography>
         <Typography
           variant="h6"
           component="h6"
           sx={{ textAlign: "center", color: "gray" }}
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, nulla.
+          Unlock Achievement,Ace Assignments
         </Typography>
 
         <Card
@@ -144,45 +144,36 @@ export default function Home() {
           }}
           className="flex-wrap"
         >
-          <HomeCard
+           <HomeCard
             sx={{ width: "30%",minWidth:'300px', textAlign: "center" }}
-            title={"title"}
+            title={"Quality Assurance"}
             img={img}
             content={
               <>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. In
-                  nisi similique inventore.
-                </p>
-                <p>You can add more content here.</p>
+                <p className="text-justify">
+                At ACADEMI ASSIST, we have a robust quality assurance process in place. We review and edit the assignments to ensure we meet high standards of academic writing, grammar, and clarity. We offer revisions or have a customer satisfaction guarantee to address any issues with the delivered work.</p>
               </>
             }
           />
-          <HomeCard
+         <HomeCard
             sx={{ width: "30%",minWidth:'300px', textAlign: "center" }}
-            title={"title"}
+            title={"Confidentiality and Privacy"}
             img={img}
             content={
               <>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. In
-                  nisi similique inventore.
-                </p>
-                <p>You can add more content here.</p>
+                <p className="text-justify">
+                Your privacy and confidentiality will be a top priority for us. We have strict policies in place to protect your personal information and ensure that your identity remains confidential. We have secure systems for handling payments and data.</p>
               </>
             }
           />
-          <HomeCard
+         <HomeCard
             sx={{ width: "30%",minWidth:'300px', textAlign: "center" }}
-            title={"title"}
+            title={"Customer Support"}
             img={img}
             content={
               <>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. In
-                  nisi similique inventore.
-                </p>
-                <p>You can add more content here.</p>
+                <p className="text-justify">
+                ACADEMI ASSIST have a responsive and helpful customer support team. We are available to address your queries or concerns promptly, whether through email, live chat, or phone. We are to give you 24/7 customer support for a seamless communication experience.</p>
               </>
             }
           />
@@ -198,43 +189,34 @@ export default function Home() {
         >
          <HomeCard
             sx={{ width: "30%",minWidth:'300px', textAlign: "center" }}
-            title={"title"}
+            title={"Timely Delivery"}
             img={img}
             content={
               <>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. In
-                  nisi similique inventore.
-                </p>
-                <p>You can add more content here.</p>
+                <p className="text-justify">
+                Meeting deadlines is crucial when it comes to ACADEMIC ASSIST. We have a track record of delivering assignments on time or even before the deadline. We will be responsive to your inquiries and provide regular updates on the progress of your assignment.</p>
               </>
             }
           />
          <HomeCard
             sx={{ width: "30%",minWidth:'300px', textAlign: "center" }}
-            title={"title"}
+            title={"Expertise and Qualifications"}
             img={img}
             content={
               <>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. In
-                  nisi similique inventore.
-                </p>
-                <p>You can add more content here.</p>
+                <p className="text-justify">
+                ACADEMI ASSIST have a team of skilled and knowledgeable writers with expertise in various academic disciplines. We possess the necessary qualifications, such as advanced degrees or relevant certifications, to ensure that we can handle your assignments effectively.</p>
               </>
             }
           />
          <HomeCard
             sx={{ width: "30%",minWidth:'300px', textAlign: "center" }}
-            title={"title"}
+            title={"Plagiarism Free Work"}
             img={img}
             content={
               <>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. In
-                  nisi similique inventore.
-                </p>
-                <p>You can add more content here.</p>
+                <p className="text-justify">
+                We use trusted plagiarism detection software, Turnitin.com, to triple-check our completed papers for any instances of plagiarism after writing, editing, and proofreading. Plagiarism is strictly prohibited by our policies. We only offer papers that are completely original and customised.</p>
               </>
             }
           />
@@ -242,7 +224,7 @@ export default function Home() {
       </div>
       <div className="home_selector">
         <div className="mask">
-          <ul className="home_nav">
+          {/* <ul className="home_nav">
             <li>
               {" "}
               <Typography variant="h6" component={"h6"}>
@@ -267,15 +249,16 @@ export default function Home() {
                 text
               </Typography>{" "}
             </li>
-          </ul>
-          <p className="home_para">
-            <h1 style={{ marginBottom: "12px" }}>Heading</h1>
-            <Typography variant="h6" component={"h6"}>
+          </ul> */}
+          <p className="w-[100%] relative top-[40%] p-4 text-white">
+            <h1 style={{ marginBottom: "12px" }} className="font-[600] text-[20px]">Why ACADEMI ASSIST</h1>
+          <p className="font-[500] text-[18px]">
               {" "}
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
-              accusantium voluptas porro id quia exercitationem soluta quam in
-              dignissimos magnam! Totam, perspiciatis quam!
-            </Typography>
+              The company's writers possess extensive knowledge in their respective fields, enabling them to produce assignments that showcase a deep understanding of the subject matter. Additionally, they are proficient in various academic writing styles and can adhere to specific formatting guidelines requested by educational institutions.
+ACADEMI ASSIST operates with a strict commitment to originality and academic integrity. All assignments undergo a rigorous plagiarism-checking process to ensure they are free from any form of plagiarism. Students can trust that the papers they receive are unique, authentic, and have been crafted exclusively for their academic needs.
+Furthermore, ACADEMI ASSIST values confidentiality and respects the privacy of its clients. The personal information shared during the assignment ordering process is treated with the utmost discretion and is protected by robust security measures.
+
+            </p>
           </p>
         </div>
       </div>
@@ -305,7 +288,7 @@ export default function Home() {
               </CardContent>
               <CardContent>
                 <Typography variant="h6" component={"h6"}>
-                  sudhirtawaniya30@gmail.com Address over There
+                Operationacademiassist@gmail.com
                 </Typography>
               </CardContent>
               <CardContent></CardContent>

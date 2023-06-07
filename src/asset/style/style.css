@@ -479,7 +479,7 @@ font-weight: 700;
     background-image: linear-gradient(to bottom, rgba(80, 133, 246, 0.8) 0%,rgba(125, 242, 204, 0.8) 100%);;
 }
 
-    @media only screen and (min-width: 768px){
+    
         .parent:hover .child {
             opacity:1;
             height:auto;
@@ -492,5 +492,5 @@ font-weight: 700;
             overflow:hidden;
             transform: translateY(-10%);
         }
-    }
+    
     

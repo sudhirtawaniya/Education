@@ -66,8 +66,8 @@ export default function ContactUs() {
               Submit
             </Button>
         </div>
-        <div className="message w-[40%]">
-        <div className="box w-full mx-5">
+        <div className="message md:w-[40%] w-full mt-5 md:mt-0">
+        <div className="box w-full md:mx-5">
             <div className="email bg-black  p-7  flex items-center justify-between">
                 <div className='w-[30px] '>
             <LuMail size={"30px"} className='text-[#fff] '/>
@@ -78,7 +78,7 @@ export default function ContactUs() {
                 </div>
             </div>
         </div>
-        <div className="box w-full mt-5 mx-5">
+        <div className="box w-full mt-5 md:mx-5">
             <div className="email bg-black  p-7  flex items-center justify-between">
                 <div className='w-[30px] '>
             <HiOutlineLocationMarker size={"30px"} className='text-[#fff] '/>
