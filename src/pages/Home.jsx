@@ -20,10 +20,9 @@ export default function Home() {
       {/* <Navbar /> */}
       <div className="hero h-[600px]">
         <div className="mask">
-         <NavBar/>
-          <div className="hero_text px-2 py-4">
-         
-            <Typography variant="h3" component="h6">
+          <NavBar />
+          <div className="hero_text ">
+            <Typography variant="h3" component="h6" className="m-4">
               Hire best tutors and researchers
             </Typography>
             <Typography variant="p" component="h4">

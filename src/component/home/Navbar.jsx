@@ -146,7 +146,7 @@ export default function NavBar() {
 
 <ul className="child transition z-[99] duration-700 absolute top-full left-[-30%] w-48 bg-white shadow-lg md:rounded-b text-black font-[15px] ">
 {data.map((data,val)=>{
-  return <><li className="hover:bg-slate-300 px-2 py-[2px] text-[10px] font-[400]" onClick={()=>{nav("/cource/"+data.name)}}>
+  return <><li className="hover:bg-slate-300 px-2 py-[2px] text-[10px] font-[400]" onClick={()=>{nav("/cource/"+data.name);}}>
   {data.name}
 
 </li></>
